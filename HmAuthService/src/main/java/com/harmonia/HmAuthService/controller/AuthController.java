@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/auth")
 @RestController
-public class AuthService {
+public class AuthController {
 
 	@GetMapping("/check/email")
 	public ResponseEntity<Object> checkEmail() {
