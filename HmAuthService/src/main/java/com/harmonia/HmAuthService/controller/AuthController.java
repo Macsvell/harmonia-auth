@@ -65,7 +65,6 @@ public class AuthController {
 		try {
 			otpService.send(email);
 		} catch(MailException e) {
-			e.printStackTrace();
 			return ResponseEntity.badRequest().build();
 		}
 		return ResponseEntity.noContent().build();
